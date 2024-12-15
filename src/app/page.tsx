@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Header from "../components/Header";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -7,6 +8,7 @@ import Projects from "../components/Projects";
 import SocialLinks from "../components/SocialLinks";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -18,6 +20,19 @@ export default function Home() {
             <Header />
             <div className="mt-6">
               <SocialLinks />
+            </div>
+            <div className="mt-6">
+              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10">
+                <Image
+                  src="/nyan-cat.gif"
+                  alt="Nyan Cat"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto rounded-3xl"
+                  priority
+                />
+              </div>
             </div>
           </div>
           <About />
@@ -37,6 +52,19 @@ export default function Home() {
             <div className="mt-6">
               <SocialLinks />
             </div>
+            <div className="mt-6">
+              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10">
+                <Image
+                  src="/nyan-cat.gif"
+                  alt="Nyan Cat"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto rounded-3xl"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
         {/* Right Column (Main Content) */}
@@ -47,7 +75,7 @@ export default function Home() {
             <Education />
             <Projects />
           </main>
-          <Footer />
+          <Footer />kkkkkkkkkkk
         </div>
       </div>
     </div>
