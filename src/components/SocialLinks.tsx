@@ -49,17 +49,6 @@ const SocialLinks: React.FC = () => {
           <FaLinkedin size={24} />
         </a>
       </div>
-
-      <div className="group relative">
-        <a
-          href="https://leetcode.com/u/crinklybrain2003/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-400 hover:text-white transition-transform transform hover:scale-125 hover:rotate-12"
-        >
-          <SiLeetcode size={24} />
-        </a>
-      </div>
     </div>
   );
 };
