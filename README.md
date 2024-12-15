@@ -1,6 +1,4 @@
-I'll help you create a comprehensive README.md for your portfolio project. Based on the codebase scan, here's an updated README:
 
-```markdown:README.md
 # Piyush's Portfolio
 
 A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.
