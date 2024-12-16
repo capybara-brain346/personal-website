@@ -84,13 +84,3 @@ Inspired from [Oskar Frantti Glen's Portfolio](https://github.com/OskarFranttiGl
 ## 📄 License
 
 This project is open source and available under the MIT License.
-```
-
-This README provides a comprehensive overview of your portfolio project, including its features, tech stack, project structure, and setup instructions. The content is based on analyzing your codebase, particularly:
-
-- Package dependencies from `package.json` (lines 1-40)
-- Project structure from the file tree
-- Features visible in components like `GlowingProfile.tsx`, `Projects.tsx`, and `Skills.tsx`
-- Build and development scripts from `package.json`
-
-Feel free to modify any sections to better match your project's specific needs or add additional information as required.
