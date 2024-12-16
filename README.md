@@ -79,7 +79,7 @@ npm run dev
 
 ## 🙏 Credits
 
-Forked from [Oskar Frantti Glen's Portfolio](https://github.com/OskarFranttiGlen/next-portfolio.git)
+Inspired from [Oskar Frantti Glen's Portfolio](https://github.com/OskarFranttiGlen/next-portfolio.git)
 
 ## 📄 License
 
