@@ -5,7 +5,8 @@ export type SkillCategory =
   | "frameworks"
   | "backend"
   | "databases"
-  | "practices";
+  | "practices"
+  | "cicd";
 
 interface ChipProps {
   text: string;
@@ -18,6 +19,7 @@ const categoryColors: Record<SkillCategory, { bg: string; text: string }> = {
   backend: { bg: "bg-purple-500", text: "text-purple-500" },
   databases: { bg: "bg-red-500", text: "text-red-500" },
   practices: { bg: "bg-yellow-500", text: "text-yellow-500" },
+  cicd: { bg: "bg-[#F5DEB3]", text: "text-white" },
 };
 
 export const Chip: React.FC<ChipProps> = ({ text, category }) => {

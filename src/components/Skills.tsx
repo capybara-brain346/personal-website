@@ -7,6 +7,15 @@ const skills: { [key in SkillCategory]: string[] } = {
   backend: ["REST APIs", "Microservices"],
   databases: ["Postgres", "MongoDB", "MySQL"],
   practices: ["Git", "GitHub"],
+  cicd: [
+    "Docker",
+    "Vercel",
+    "Supabase",
+    "Neon",
+    "Render",
+    "GitHub Actions",
+    "GCP",
+  ],
 };
 
 const Skills: React.FC = () => {
@@ -18,7 +27,7 @@ const Skills: React.FC = () => {
         ([category, items]) => (
           <div key={category} className="mb-4">
             <h4 className="text-xl font-semibold mb-2 text-gray-200 capitalize">
-              {category}
+              {category === "cicd" ? category.toUpperCase() : category}
             </h4>
             <ChipList items={items} category={category} />
           </div>
