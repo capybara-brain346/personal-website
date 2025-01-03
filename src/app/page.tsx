@@ -22,7 +22,7 @@ export default function Home() {
               <SocialLinks />
             </div>
             <div className="mt-6">
-              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10">
+              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10 pointer-events-none select-none">
                 <Image
                   src="/nyan-cat.gif"
                   alt="Nyan Cat"
@@ -54,7 +54,7 @@ export default function Home() {
               <SocialLinks />
             </div>
             <div className="mt-6">
-              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10">
+              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10 pointer-events-none select-none">
                 <Image
                   src="/nyan-cat.gif"
                   alt="Nyan Cat"
