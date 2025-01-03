@@ -22,21 +22,16 @@ export default function Home() {
               <SocialLinks />
             </div>
             <div className="mt-6">
-              <div className="flex justify-center">
-                <div className="w-full max-w-[280px] md:max-w-[400px] aspect-[4/3] relative">
-                  <Image
-                    src="/f1.gif"
-                    alt="F1 Car"
-                    width={400}
-                    height={300}
-                    sizes="(max-width: 768px) 280px, 400px"
-                    className="w-full h-full rounded-3xl object-cover border-2 rounded-3xl"
-                    priority
-                  />
-                  <div className="absolute bottom-[-14px] left-1/2 -translate-x-1/2 bg-white text-black px-4 py-1 rounded-xl border-2 border-black backdrop-blur-sm">
-                    ❤️ F1
-                  </div>
-                </div>
+              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10">
+                <Image
+                  src="/nyan-cat.gif"
+                  alt="Nyan Cat"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto rounded-3xl"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -58,21 +53,16 @@ export default function Home() {
               <SocialLinks />
             </div>
             <div className="mt-6">
-              <div className="flex justify-center">
-                <div className="w-full max-w-[280px] md:max-w-[400px] aspect-[4/3] relative">
-                  <Image
-                    src="/f1.gif"
-                    alt="F1 Car"
-                    width={400}
-                    height={300}
-                    sizes="(max-width: 768px) 280px, 400px"
-                    className="w-full h-full rounded-3xl object-cover border-2 rounded-3xl"
-                    priority
-                  />
-                  <div className="absolute bottom-[-14px] left-1/2 -translate-x-1/2 bg-white text-black px-4 py-1 rounded-xl border-2 border-black backdrop-blur-sm">
-                    ❤️ F1
-                  </div>
-                </div>
+              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10">
+                <Image
+                  src="/nyan-cat.gif"
+                  alt="Nyan Cat"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto rounded-3xl"
+                  priority
+                />
               </div>
             </div>
           </div>
