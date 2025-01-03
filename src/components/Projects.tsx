@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/legacy/image";
 import { FaGithub } from "react-icons/fa";
 import { ChipList } from "./Chips";
-import TwitterFeed from "./TwitterFeed";
 
 interface Project {
   name: string;
@@ -120,7 +119,6 @@ const Projects: React.FC = () => {
           ))}
         </ul>
       </section>
-      <TwitterFeed />
     </>
   );
 };
