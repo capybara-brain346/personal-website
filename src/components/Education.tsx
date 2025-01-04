@@ -8,7 +8,6 @@ const educationData = [
     university: "D.Y.Patil College Of Engineering, Akurdi",
     period: "Nov 2022 - Present",
     image: "/dypcoe-image.jpg",
-    units: [""],
   },
 ];
 
@@ -42,20 +41,6 @@ const Education: React.FC = () => {
                 <p className="text-sm sm:text-base text-gray-400">
                   {edu.period}
                 </p>
-                <details className="mt-2">
-                  <summary className="cursor-pointer text-gray-300 hover:text-white transition-colors duration-300 flex items-center">
-                    <FaChevronDown className="mr-2 inline-block details-open:hidden" />
-                    <FaChevronUp className="mr-2 hidden details-open:inline-block" />
-                    <span>View Units</span>
-                  </summary>
-                  <ul className="mt-4 ml-4 space-y-2">
-                    {edu.units.map((unit, unitIndex) => (
-                      <li key={unitIndex} className="text-gray-300">
-                        • {unit}
-                      </li>
-                    ))}
-                  </ul>
-                </details>
               </div>
             </div>
           </li>
