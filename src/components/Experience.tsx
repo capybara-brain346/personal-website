@@ -14,10 +14,10 @@ interface Job {
 
 const experiences: Job[] = [
   {
-    title: "CTO & Founder",
-    company: "Shifti",
-    location: "Melbourne, Victoria",
-    period: "April 2023 - Present",
+    title: "AI Engineer - Intern",
+    company: "Ronin Labs Pvt Limited.",
+    location: "Pune, India",
+    period: "Jan 2026 - Present",
     description: [
       "Led the development of an innovative AI-powered shift scheduling platform for the hospitality industry.",
       "Architected and implemented a scalable microservices-based backend using Node.js and GraphQL.",
@@ -25,7 +25,7 @@ const experiences: Job[] = [
       "Integrated advanced machine learning algorithms for intelligent shift allocation and demand forecasting.",
       "Managed a team of developers, fostering a culture of innovation and continuous improvement."
     ],
-    logo: "/shifti.png",
+    logo: "/ronin_labs.jpg",
     skills: ["NextJS", "Supabase", "React Native", "Expo", "Machine Learning", "Tauri"]
   },
   {
