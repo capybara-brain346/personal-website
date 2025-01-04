@@ -75,6 +75,7 @@ export default function Home() {
           <main className="p-8 xl:p-12 xl:pr-[10%] flex-grow">
             <About />
             <Skills />
+            <Experience />
             <Education />
             <Projects />
           </main>
