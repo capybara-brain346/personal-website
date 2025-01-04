@@ -42,7 +42,6 @@ export default function Home() {
           <Education />
           <Projects />
         </main>
-        <Footer />
       </div>
 
       {/* Desktop Layout */}
@@ -78,8 +77,8 @@ export default function Home() {
             <Experience />
             <Education />
             <Projects />
+            <Footer />
           </main>
-          <Footer />
         </div>
       </div>
     </div>
