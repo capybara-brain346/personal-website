@@ -45,7 +45,7 @@ const Experience: React.FC = () => {
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-semibold text-gray-100">{job.title}</h3>
-                <p className="text-lg underline text-gray-300"><a href='https://www.linkedin.com/company/ronin-labs/' target="_blank">{job.company}{job.location}</a></p>
+                <p className="text-lg underline text-gray-300"><a href='https://www.linkedin.com/company/ronin-labs/' target="_blank">{job.company}, {job.location}</a></p>
                 <p className="text-gray-400">{job.period}</p>
               </div>
             </div>
