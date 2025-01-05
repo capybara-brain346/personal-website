@@ -17,9 +17,9 @@ const experiences: Job[] = [
     title: "AI Engineer Intern",
     company: "Ronin Labs Pvt Limited",
     location: "Pune, India",
-    period: "Jan 2026 - Present",
+    period: "Jan 2025 - Present",
     description: [
-      "TBD",
+      "",
     ],
     logo: "/ronin_labs.jpg",
     skills: ["Python", "Transformer Technologies"]

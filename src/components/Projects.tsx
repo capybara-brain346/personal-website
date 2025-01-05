@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     name: "Mars Weather Data ETL Pipeline",
     description: [
-      "An automated ETL pipeline that extracts Mars weather data from NASA's InSight API, transforms it using Java, and loads it into MongoDB for analysis. Features Apache Airflow for workflow orchestration and Docker for containerization. ☄️",
+      "An automated ETL pipeline that extracts Mars weather data from NASA's InSight API, transforms it using Java, and loads it into MongoDB for analysis.☄️",
     ],
     technologies: [
       "Java",
