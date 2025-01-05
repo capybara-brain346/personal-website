@@ -35,8 +35,10 @@ const Education: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-100">
                   {edu.degree}
                 </h3>
-                <p className="text-base sm:text-lg text-gray-300">
-                  {edu.university}
+                <p className="text-base sm:text-lg underline text-gray-300">
+                  <a href="https://www.dypcoeakurdi.ac.in/" target="_blank">
+                    {edu.university}
+                  </a>
                 </p>
                 <p className="text-sm sm:text-base text-gray-400">
                   {edu.period}
