@@ -4,7 +4,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const educationData = [
   {
-    degree: "Bachelor of Artificial Intelligence & Data Science",
+    degree: "Bachelor of Engineering In Artificial Intelligence & Data Science",
     university: "D.Y.Patil College Of Engineering, Akurdi",
     period: "Nov 2022 - Present",
     image: "/dypcoe-image.jpg",

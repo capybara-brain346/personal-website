@@ -57,10 +57,11 @@ const Experience: React.FC = () => {
                 </li>
               ))}
             </ul> */}
-            <ChipList items={job.skills} category="frameworks" />
+            {/* <ChipList items={job.skills} category="frameworks" /> */}
           </div>
         ))}
       </div>
+
     </section>
   );
 };
