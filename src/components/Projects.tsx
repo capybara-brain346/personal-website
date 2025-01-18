@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
   return (
     <>
       <section id="projects" className="py-4 mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-gray-100">Projects</h2>
+        <h2 className="text-3xl font-bold mb-6 text-black">Projects</h2>
         <ul className="space-y-12">
           {projects.map((project, index) => (
             <li
@@ -88,10 +88,10 @@ const Projects: React.FC = () => {
                   />
                 </div>
                 <div className="md:w-2/3">
-                  <h3 className="text-2xl font-semibold mb-3 text-gray-100">
+                  <h3 className="text-2xl font-semibold mb-3 text-black">
                     {project.name}
                   </h3>
-                  <ul className="space-y-2 text-gray-300 mb-4">
+                  <ul className="space-y-2 text-black mb-4">
                     {project.description.map((point, pointIndex) => (
                       <li key={pointIndex} className="flex items-start">
                         <span className="mr-2 mt-1.5 text-gray-500">•</span>
@@ -106,7 +106,7 @@ const Projects: React.FC = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
+                        className="flex items-center text-black hover:text-white transition-colors duration-300"
                       >
                         <FaGithub className="mr-2" />
                         <span>GitHub</span>
