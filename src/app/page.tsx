@@ -9,10 +9,11 @@ import SocialLinks from "../components/SocialLinks";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Script from "next/script";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0e0e0e] text-white">
+    <div className="min-h-screen bg-[#ececec] text-black">
       {/* Mobile Layout */}
       <div className="lg:hidden flex flex-col min-h-screen">
         <main className="p-6 max-w-screen-sm mx-auto flex-grow">

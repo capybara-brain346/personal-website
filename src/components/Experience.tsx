@@ -29,7 +29,7 @@ const experiences: Job[] = [
 const Experience: React.FC = () => {
   return (
     <section id="experience" className="mb-12">
-      <h2 className="text-3xl font-bold mb-6 text-gray-100">Experience</h2>
+      <h2 className="text-3xl font-bold mb-6 text-black">Experience</h2>
       <div className="space-y-6">
         {experiences.map((job, index) => (
           <div key={index} className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-600">
@@ -44,9 +44,9 @@ const Experience: React.FC = () => {
                 />
               </div>
               <div className="flex-grow mb-10">
-                <h3 className="text-2xl font-semibold text-gray-100">{job.title}</h3>
-                <p className="text-lg underline text-gray-300"><a href='https://www.linkedin.com/company/ronin-labs/' target="_blank">{job.company}, {job.location}</a></p>
-                <p className="text-gray-400">{job.period}</p>
+                <h3 className="text-2xl font-semibold text-black">{job.title}</h3>
+                <p className="text-lg underline text-black"><a href='https://www.linkedin.com/company/ronin-labs/' target="_blank">{job.company}, {job.location}</a></p>
+                <p className="text-black">{job.period}</p>
               </div>
             </div>
             {/* <ul className="space-y-2 text-gray-300 mb-4">
