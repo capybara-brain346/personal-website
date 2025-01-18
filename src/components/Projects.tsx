@@ -109,7 +109,7 @@ const Projects: React.FC = () => {
                         className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
                       >
                         <FaGithub className="mr-2" />
-                        <span>View Code</span>
+                        <span>GitHub</span>
                       </a>
                     )}
                   </div>

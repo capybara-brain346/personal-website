@@ -7,7 +7,7 @@ interface Job {
   company: string;
   location: string;
   period: string;
-  description: string[];
+  // description: string[];
   logo: string;
   skills: string[];
 }
@@ -18,11 +18,11 @@ const experiences: Job[] = [
     company: "Ronin Labs Pvt Limited",
     location: "India",
     period: "Jan 2025 - Present",
-    description: [
-      "",
-    ],
+    // description: [
+    //   "",
+    // ],
     logo: "/ronin_labs.jpg",
-    skills: ["Python", "Transformer Technologies"]
+    skills: ["Python", "Flask", "Pytorch", "Huggingface", "LLMs", "Stable Diffusion", "Automatic1111", "Comfy UI", "Llama LLMs"]
   },
 ];
 
@@ -57,7 +57,7 @@ const Experience: React.FC = () => {
                 </li>
               ))}
             </ul> */}
-            {/* <ChipList items={job.skills} category="frameworks" /> */}
+            <ChipList items={job.skills} category="frameworks" />
           </div>
         ))}
       </div>

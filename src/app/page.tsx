@@ -21,20 +21,6 @@ export default function Home() {
             <div className="mt-6">
               <SocialLinks />
             </div>
-            <div className="mt-6">
-              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10 pointer-events-none select-none">
-                <Image
-                  src="/nyan-cat.gif"
-                  alt="Nyan Cat"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto rounded-3xl"
-                  priority
-                  unoptimized
-                />
-              </div>
-            </div>
           </div>
           <About />
           <Skills />
@@ -52,20 +38,6 @@ export default function Home() {
             <Header />
             <div className="mt-6">
               <SocialLinks />
-            </div>
-            <div className="mt-6">
-              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10 pointer-events-none select-none">
-                <Image
-                  src="/nyan-cat.gif"
-                  alt="Nyan Cat"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-auto rounded-3xl"
-                  priority
-                  unoptimized
-                />
-              </div>
             </div>
           </div>
         </div>
