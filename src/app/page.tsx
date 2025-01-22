@@ -13,7 +13,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#ececec] text-black">
+    <div className="min-h-screen bg-[#b2b2b2] text-black">
       {/* Mobile Layout */}
       <div className="lg:hidden flex flex-col min-h-screen">
         <main className="p-6 max-w-screen-sm mx-auto flex-grow">

@@ -33,14 +33,14 @@ const GlowingProfile = () => {
       <div className="absolute inset-0 rounded-full animate-pulse bg-green-400/20 blur-sm" />
 
       {/* Profile picture container */}
-      <div className="relative w-full h-full overflow-hidden rounded-full ring-1 ring-green-400/30 pointer-events-none select-none">
+      <div className="relative w-full h-full overflow-hidden rounded-full ring-4 ring-green-600/30 pointer-events-none select-none">
         <Image
-          src="/profile_pic.png"
+          src="/profile_pic.jpg"
           alt="Piyush Choudhari"
           layout="fill"
           objectFit="cover"
           priority
-          className="relative z-10"
+          className="relative z-10 scale-110"
         />
       </div>
     </div>
