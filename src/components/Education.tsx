@@ -13,7 +13,7 @@ const educationData = [
 
 const Education: React.FC = () => {
   return (
-    <section id="education" className="mb-12">
+    <section id="education" className="mb-12 p-4 bg-red-300 rounded-xl border-2 border-black">
       <h2 className="text-3xl font-bold mb-6 text-black">Education</h2>
       <ul className="space-y-6">
         {educationData.map((edu, index) => (
