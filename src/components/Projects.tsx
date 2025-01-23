@@ -21,7 +21,6 @@ const projects: Project[] = [
       "Java",
       "MongoDB",
       "MySQL",
-      "JDBC",
       "Apache Airflow",
       "Dockers",
     ],
@@ -69,7 +68,7 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
   return (
     <>
-      <section id="projects" className="py-4 mb-12">
+      <section id="projects" className="py-4 mb-12 p-4 bg-red-300 rounded-xl border-2 border-black">
         <h2 className="text-3xl font-bold mb-6 text-black">Projects</h2>
         <ul className="space-y-12">
           {projects.map((project, index) => (
@@ -91,7 +90,7 @@ const Projects: React.FC = () => {
                   <h3 className="text-2xl font-semibold mb-3 text-black">
                     {project.name}
                   </h3>
-                  <ul className="space-y-2 text-black mb-4">
+                  <ul className="space-y-2 text-black text-lg mb-4">
                     {project.description.map((point, pointIndex) => (
                       <li key={pointIndex} className="flex items-start">
                         <span className="mr-2 mt-1.5 text-gray-500">•</span>
