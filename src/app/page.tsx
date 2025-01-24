@@ -22,12 +22,25 @@ export default function Home() {
             <div className="mt-6">
               <SocialLinks />
             </div>
+            <div className="mt-6">
+              <div className="border-2 border-black rounded-3xl overflow-hidden bg-black bg-opacity-10">
+                <Image
+                  src="/nyan-cat.gif"
+                  alt="Nyan Cat"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto rounded-3xl"
+                  priority
+                />
+              </div>
+            </div>
+            <About />
+            <Skills />
+            <Experience />
+            <Education />
+            <Projects />
           </div>
-          <About />
-          <Skills />
-          <Experience />
-          <Education />
-          <Projects />
         </main>
       </div>
 
@@ -39,6 +52,19 @@ export default function Home() {
             <Header />
             <div className="mt-6">
               <SocialLinks />
+            </div>
+            <div className="mt-6">
+              <div className="border-2 border-black rounded-3xl overflow-hidden bg-black bg-opacity-10">
+                <Image
+                  src="/nyan-cat.gif"
+                  alt="Nyan Cat"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto rounded-3xl"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
