@@ -68,7 +68,7 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
   return (
     <>
-      <section id="projects" className="py-4 mb-12 p-4 bg-red-300 rounded-xl border-2 border-black">
+      <section id="projects" className="py-4 mb-12 p-4 bg-red-300 rounded-xl border-2 border-black hover:shadow-2xl">
         <h2 className="text-3xl font-bold mb-6 text-black">Projects</h2>
         <ul className="space-y-12">
           {projects.map((project, index) => (
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
               key={index}
               className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-600"
             >
-              <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col md:flex-row border-b-2 border-gray-600">
                 <div className="md:w-1/3 mb-4 md:mb-0 md:mr-6">
                   <Image
                     src={project.image}
@@ -99,7 +99,7 @@ const Projects: React.FC = () => {
                     ))}
                   </ul>
                   <ChipList items={project.technologies} category="frameworks" />
-                  <div className="flex space-x-4 mt-4">
+                  <div className="flex space-x-4 mt-4 mb-4">
                     {project.githubLink && (
                       <a
                         href={project.githubLink}
