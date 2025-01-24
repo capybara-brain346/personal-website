@@ -14,12 +14,12 @@ interface ChipProps {
 }
 
 const categoryColors: Record<SkillCategory, { bg: string; text: string }> = {
-  languages: { bg: "bg-blue-500", text: "text-blue-500" },
+  languages: { bg: "bg-blue-500", text: "text-black" },
   frameworks: { bg: "bg-green-500", text: "text-black" },
-  backend: { bg: "bg-purple-500", text: "text-purple-500" },
-  databases: { bg: "bg-red-500", text: "text-red-500" },
-  practices: { bg: "bg-yellow-500", text: "text-yellow-500" },
-  cicd: { bg: "bg-[#F5DEB3]", text: "text-black" },
+  backend: { bg: "bg-purple-500", text: "text-black" },
+  databases: { bg: "bg-red-500", text: "text-black" },
+  practices: { bg: "bg-yellow-500", text: "text-black" },
+  cicd: { bg: "bg-orange-400", text: "text-black" },
 };
 
 export const Chip: React.FC<ChipProps> = ({ text, category }) => {
