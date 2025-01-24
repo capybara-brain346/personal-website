@@ -30,7 +30,7 @@ export default function Home() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-auto rounded-3xl"
+                  className="w-full h-auto rounded-3xl pointer-events-none select-none"
                   priority
                 />
               </div>
@@ -61,7 +61,7 @@ export default function Home() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-auto rounded-3xl"
+                  className="w-full h-auto rounded-3xl pointer-events-none select-none"
                   priority
                 />
               </div>
