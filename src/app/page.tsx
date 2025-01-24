@@ -22,7 +22,7 @@ export default function Home() {
             <div className="mt-6">
               <SocialLinks />
             </div>
-            <div className="mt-6">
+            <div className="mt-6 mb-6">
               <div className="border-2 border-black rounded-3xl overflow-hidden bg-black bg-opacity-10">
                 <Image
                   src="/nyan-cat.gif"

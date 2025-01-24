@@ -68,7 +68,7 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
   return (
     <>
-      <section id="projects" className="py-4 mb-12 p-4 bg-red-300 rounded-xl border-2 border-black hover:shadow-2xl">
+      <section id="projects" className="py-4 mb-12 p-4 bg-red-200 rounded-3xl border-2 border-black hover:shadow-2xl">
         <h2 className="text-3xl font-bold mb-6 text-black">Projects</h2>
         <ul className="space-y-12">
           {projects.map((project, index) => (
