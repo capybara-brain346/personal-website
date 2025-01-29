@@ -55,7 +55,7 @@ export default function Home() {
               <SocialLinks />
             </div>
             <div className="mt-6">
-              <div className="border-2 border-black rounded-3xl overflow-hidden bg-black bg-opacity-10">
+              <div className="border-2 border-black rounded-3xl overflow-hidden bg-black bg-opacity-100">
                 <Image
                   src="/nyan-cat.gif"
                   alt="Nyan Cat"
