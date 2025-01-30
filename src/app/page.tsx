@@ -41,6 +41,7 @@ export default function Home() {
             <Experience />
             <Education />
             <Projects />
+            <Footer />
           </div>
         </main>
       </div>
