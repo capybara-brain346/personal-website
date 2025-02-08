@@ -44,8 +44,8 @@ const Experience: React.FC = () => {
                 />
               </div>
               <div className="flex-grow mb-10">
-                <h3 className="text-2xl font-semibold text-black">{job.title}</h3>
-                <p className="text-lg underline text-black"><a href='https://www.linkedin.com/company/ronin-labs/' target="_blank">{job.company}, {job.location}</a></p>
+                <h3 className="text-2xl font-semibold text-black"><a href='https://www.linkedin.com/company/ronin-labs/'>{job.title}</a></h3>
+                <p className="text-lg text-black"><a href='https://www.linkedin.com/company/ronin-labs/' target="_blank">{job.company}, {job.location}</a></p>
                 <p className="text-black">{job.period}</p>
               </div>
             </div>

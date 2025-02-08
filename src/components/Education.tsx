@@ -35,7 +35,7 @@ const Education: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl font-semibold text-black">
                   {edu.degree}
                 </h3>
-                <p className="text-base sm:text-lg underline text-black">
+                <p className="text-base sm:text-lg text-black">
                   <a href="https://www.dypcoeakurdi.ac.in/" target="_blank">
                     {edu.university}
                   </a>
