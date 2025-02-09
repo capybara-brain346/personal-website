@@ -28,7 +28,7 @@ const experiences: Job[] = [
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="mb-12 p-4 bg-red-200 rounded-3xl border-2 border-black hover:shadow-2xl">
+    <section id="experience" className="mb-12 p-4 bg-red-200 rounded-3xl border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all">
       <h2 className="text-3xl font-bold mb-6 text-black">Experience</h2>
       <div className="space-y-6">
         {experiences.map((job, index) => (

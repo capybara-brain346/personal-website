@@ -68,7 +68,7 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
   return (
     <>
-      <section id="projects" className="py-4 mb-12 p-4 bg-red-200 rounded-3xl border-2 border-black hover:shadow-2xl">
+      <section id="projects" className="py-4 mb-12 p-4 bg-red-200 rounded-3xl border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all">
         <h2 className="text-3xl font-bold mb-6 text-black">Projects</h2>
         <ul className="space-y-12">
           {projects.map((project, index) => (
