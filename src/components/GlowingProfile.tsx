@@ -40,7 +40,7 @@ const GlowingProfile = () => {
           layout="fill"
           objectFit="cover"
           priority
-          className="relative z-10"
+          className="relative z-10 scale-110"
         />
       </div>
     </div>

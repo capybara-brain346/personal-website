@@ -21,7 +21,6 @@ const projects: Project[] = [
       "Java",
       "MongoDB",
       "MySQL",
-      "JDBC",
       "Apache Airflow",
       "Dockers",
     ],
@@ -69,15 +68,15 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
   return (
     <>
-      <section id="projects" className="py-4 mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-gray-100">Projects</h2>
+      <section id="projects" className="py-4 mb-12 p-4 bg-red-200 rounded-3xl border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all">
+        <h2 className="text-3xl font-bold mb-6 text-black">Projects</h2>
         <ul className="space-y-12">
           {projects.map((project, index) => (
             <li
               key={index}
               className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-600"
             >
-              <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col md:flex-row border-b-2 border-gray-600">
                 <div className="md:w-1/3 mb-4 md:mb-0 md:mr-6">
                   <Image
                     src={project.image}
@@ -88,10 +87,10 @@ const Projects: React.FC = () => {
                   />
                 </div>
                 <div className="md:w-2/3">
-                  <h3 className="text-2xl font-semibold mb-3 text-gray-100">
+                  <h3 className="text-2xl font-semibold mb-3 text-black">
                     {project.name}
                   </h3>
-                  <ul className="space-y-2 text-gray-300 mb-4">
+                  <ul className="space-y-2 text-black text-lg mb-4">
                     {project.description.map((point, pointIndex) => (
                       <li key={pointIndex} className="flex items-start">
                         <span className="mr-2 mt-1.5 text-gray-500">•</span>
@@ -100,16 +99,16 @@ const Projects: React.FC = () => {
                     ))}
                   </ul>
                   <ChipList items={project.technologies} category="frameworks" />
-                  <div className="flex space-x-4 mt-4">
+                  <div className="flex space-x-4 mt-4 mb-4">
                     {project.githubLink && (
                       <a
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
+                        className="flex items-center text-black hover:text-white transition-colors duration-300"
                       >
                         <FaGithub className="mr-2" />
-                        <span>View Code</span>
+                        <span>GitHub</span>
                       </a>
                     )}
                   </div>

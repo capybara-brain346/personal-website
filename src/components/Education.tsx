@@ -13,8 +13,8 @@ const educationData = [
 
 const Education: React.FC = () => {
   return (
-    <section id="education" className="mb-12">
-      <h2 className="text-3xl font-bold mb-6 text-gray-100">Education</h2>
+    <section id="education" className="mb-12 p-4 bg-red-200 rounded-3xl border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all">
+      <h2 className="text-3xl font-bold mb-6 text-black">Education</h2>
       <ul className="space-y-6">
         {educationData.map((edu, index) => (
           <li
@@ -32,15 +32,15 @@ const Education: React.FC = () => {
                 />
               </div>
               <div className="flex-grow">
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-100">
+                <h3 className="text-xl sm:text-2xl font-semibold text-black">
                   {edu.degree}
                 </h3>
-                <p className="text-base sm:text-lg underline text-gray-300">
+                <p className="text-base sm:text-lg text-black">
                   <a href="https://www.dypcoeakurdi.ac.in/" target="_blank">
                     {edu.university}
                   </a>
                 </p>
-                <p className="text-sm sm:text-base text-gray-400">
+                <p className="text-sm sm:text-base text-black">
                   {edu.period}
                 </p>
               </div>

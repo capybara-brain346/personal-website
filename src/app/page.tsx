@@ -9,10 +9,11 @@ import SocialLinks from "../components/SocialLinks";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Script from "next/script";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0e0e0e] text-white">
+    <div className="min-h-screen bg-[#ffdfdf] text-black">
       {/* Mobile Layout */}
       <div className="lg:hidden flex flex-col min-h-screen">
         <main className="p-6 max-w-screen-sm mx-auto flex-grow">
@@ -21,26 +22,27 @@ export default function Home() {
             <div className="mt-6">
               <SocialLinks />
             </div>
-            <div className="mt-6">
-              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10 pointer-events-none select-none">
+            <div className="mt-6 mb-6">
+              <div className="border-2 border-black rounded-3xl overflow-hidden bg-black bg-opacity-100">
                 <Image
                   src="/nyan-cat.gif"
                   alt="Nyan Cat"
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-auto rounded-3xl"
+                  className="w-full h-auto rounded-3xl pointer-events-none select-none"
                   priority
                   unoptimized
                 />
               </div>
             </div>
+            <About />
+            <Skills />
+            <Experience />
+            <Education />
+            <Projects />
+            <Footer />
           </div>
-          <About />
-          <Skills />
-          <Experience />
-          <Education />
-          <Projects />
         </main>
       </div>
 
@@ -54,14 +56,14 @@ export default function Home() {
               <SocialLinks />
             </div>
             <div className="mt-6">
-              <div className="border-2 rounded-3xl overflow-hidden bg-black bg-opacity-10 pointer-events-none select-none">
+              <div className="border-2 border-black rounded-3xl overflow-hidden bg-black bg-opacity-100">
                 <Image
                   src="/nyan-cat.gif"
                   alt="Nyan Cat"
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-auto rounded-3xl"
+                  className="w-full h-auto rounded-3xl pointer-events-none select-none"
                   priority
                   unoptimized
                 />
