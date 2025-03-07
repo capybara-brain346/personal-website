@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Header from "../components/Header";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -8,7 +7,7 @@ import Projects from "../components/Projects";
 import SocialLinks from "../components/SocialLinks";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
-import Script from "next/script";
+import Achievements from "@/components/Achievements";
 
 export default function Home() {
   return (
@@ -27,6 +26,7 @@ export default function Home() {
           <Experience />
           <Education />
           <Projects />
+          <Achievements />
         </main>
       </div>
 
@@ -49,10 +49,11 @@ export default function Home() {
             <Experience />
             <Education />
             <Projects />
+            <Achievements />
             <Footer />
           </main>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
