@@ -18,7 +18,7 @@ const ResumeButton: React.FC = () => {
         <TooltipTrigger asChild>
           <Button variant="outline" size="sm" className="gap-2" asChild>
             <a
-              href="https://drive.google.com/file/d/1RigMGn_--FyJfM7Dse0FZljLtKcYPoeY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1TrpaTS5rNhsSEzLt1zQpVmAkwive7TUk/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
