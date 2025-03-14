@@ -13,6 +13,22 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "AtjBot",
+    description: [
+      "Developed a Retrieval-Augmented Generation based chatbot for the official website of Department Of Justice India.",
+    ],
+    technologies: [
+      "Python",
+      "Langchain",
+      "Flask",
+      "React",
+      "Webscraping",
+      "Dockers",
+    ],
+    image: "/atjbot.png",
+    githubLink: "https://github.com/capybara-brain346/atjbot",
+  },
+  {
     name: "Mars Weather Data ETL Pipeline",
     description: [
       "An automated ETL pipeline that extracts Mars weather data from NASA's InSight API, transforms it using Java, and loads it into MongoDB for analysis.☄️",
