@@ -52,21 +52,21 @@ const Achievements: React.FC = () => {
     };
 
     return (
-        <section className="w-full max-w-6xl mx-auto p-4">
+        <section className="w-full max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">Achievements</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {achievements.map((achievement, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className="bg-black bg-opacity-10 p-6 rounded-xl border-2 hover:border-blue-500 transition-all duration-300"
+                        className="bg-black bg-opacity-10 p-6 rounded-xl border-2 mb-10 hover:border-blue-500 transition-all duration-300"
                     >
-                        <div className="mb-4 w-full h-48 relative overflow-hidden rounded-lg">
+                        <div className="mb-4 w-full h-64 md:h-48 relative overflow-hidden rounded-lg">
                             <Slider {...sliderSettings}>
                                 {achievement.images.map((image, imageIndex) => (
-                                    <div key={imageIndex} className="relative h-48">
+                                    <div key={imageIndex} className="relative h-64 md:h-48">
                                         <Image
                                             src={image}
                                             alt={`${achievement.title} - Image ${imageIndex + 1}`}
