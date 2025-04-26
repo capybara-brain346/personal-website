@@ -3,6 +3,7 @@ import Image from "next/legacy/image";
 import { FaGithub } from "react-icons/fa";
 import { ChipList } from "./Chips";
 
+
 interface Project {
   name: string;
   description: string[];
