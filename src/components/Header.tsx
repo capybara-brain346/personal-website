@@ -5,7 +5,7 @@ import { SparklesText } from "@/components/magicui/sparkles-text";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-black  bg-opacity-10 p-8 rounded-3xl border-2 flex flex-col items-center">
+    <header className="bg-black bg-opacity-10 p-8 rounded-3xl border-2 flex flex-col items-center">
 
       <GlowingProfile />
       <SparklesText className="text-2xl sm:text-4xl sm:p-6" sparklesCount={13}> Piyush Choudhari </SparklesText>
