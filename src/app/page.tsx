@@ -26,7 +26,6 @@ export default function Home() {
             color="#ffffff"
             refresh
           />
-          <SmoothCursor />
           <div className="mb-6">
             <Header />
             <div className="mt-6">
