@@ -8,7 +8,6 @@ import SocialLinks from "../components/SocialLinks";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Achievements from "@/components/Achievements";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { Particles } from "@/components/magicui/particles";
 import { Fullscreen } from "lucide-react";
 
@@ -52,7 +51,6 @@ export default function Home() {
             color="#ffffff"
             refresh
           />
-          <SmoothCursor />
           <div>
             <Header />
             <div className="mt-6">
