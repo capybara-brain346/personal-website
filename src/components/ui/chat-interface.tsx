@@ -16,7 +16,7 @@ interface ChatInterfaceProps {
 
 export const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
     const [messages, setMessages] = useState<Message[]>([
-        { role: 'assistant', content: "Hi! I'm Piyush's Chatbot. Ask me anything about his experience, projects, or skills!" }
+        { role: 'assistant', content: "Hi! This my Chatbot. Ask me anything about his experience, projects, or skills!" }
     ]);
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -64,7 +64,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
     return (
         <div className="fixed inset-x-0 bottom-0 sm:bottom-12 sm:right-4 sm:inset-x-auto w-full sm:w-[320px] md:w-[380px] h-[85vh] sm:h-[500px] bg-white border rounded-t-lg sm:rounded-lg shadow-xl flex flex-col z-50">
             <div className="p-4 border-b flex justify-between items-center">
-                <h2 className="font-semibold">Chat with Piyush's Chatbot</h2>
+                <h2 className="font-semibold">Chat with my Chatbot</h2>
                 <Button variant="ghost" size="icon" onClick={onClose} className="hover:bg-muted">
                     <X className="h-4 w-4" />
                 </Button>
