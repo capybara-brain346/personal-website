@@ -26,7 +26,7 @@ const projects: Project[] = [
       "Webscraping",
       "Dockers",
     ],
-    image: "/atjbot.png",
+    image: "/projects/atjbot.png",
     githubLink: "https://github.com/capybara-brain346/atjbot",
   },
   {
@@ -42,7 +42,7 @@ const projects: Project[] = [
       "Apache Airflow",
       "Dockers",
     ],
-    image: "/MarsETL.png",
+    image: "/projects/MarsETL.png",
     githubLink: "https://github.com/capybara-brain346/Mars-Data-ETL-Pipeline",
   },
   {
@@ -60,7 +60,7 @@ const projects: Project[] = [
       "Retrieve comprehensive data on your favorite Pokémon with this Restful API. 🌟 ",
     ],
     technologies: ["Python", "FastAPI", "Sqlite3", "Pytest"],
-    image: "/pokemon.jpg",
+    image: "/projects/pokemon.jpg",
     githubLink: "https://github.com/capybara-brain346/pokedex-api",
   },
   {
@@ -69,7 +69,7 @@ const projects: Project[] = [
       "This application provides real-time insights into stock performance, company news, and market trends through an intuitive interface and AI-powered chatbot. ⚙️",
     ],
     technologies: ["Python", "React", "Flask", "Langchain", "Ollama"],
-    image: "/sap_stocks.png",
+    image: "/projects/sap_stocks.png",
     githubLink: "https://github.com/capybara-brain346/SAP-Stocks",
   },
   {
@@ -78,7 +78,7 @@ const projects: Project[] = [
       "An AI-powered resume screener built using Python, React, Flask, Langchain, ChromaDB, and the Gemini API. 🤖 ",
     ],
     technologies: ["Python", "React", "Flask", "Langchain"],
-    image: "/resume-screener.jpg",
+    image: "/projects/resume-screener.jpg",
     githubLink: "https://github.com/capybara-brain346/resume-screener-ai",
   },
 ];

@@ -21,21 +21,21 @@ const achievements: Achievement[] = [
         description: "First Place 🏆",
         date: "2025",
         organization: "IEEE CIS CCEW",
-        images: ["/Indovate-AI.jpg", "/Indovate-AI-2.jpg"]
+        images: ["/achievements/Indovate-AI.jpg", "/achievements/Indovate-AI-2.jpg"]
     },
     {
         title: "Data Visualization Hackathon",
         description: "Second Place 🏆",
         date: "2024",
         organization: "Intellex AI Students Club",
-        images: ["/Data-Visualization-Hackathon.jpg", "/Data-Visualization-Hackathon-2.jpg"]
+        images: ["/achievements/Data-Visualization-Hackathon.jpg", "/achievements/Data-Visualization-Hackathon-2.jpg"]
     },
     {
         title: "VU Visionary Techfest Hackathon",
         description: "Fourth Place 🏆",
         date: "2024",
         organization: "Vishwakarma University",
-        images: ["/VU-Hackathon.jpg", "/VU-Hackathon-2.jpg"]
+        images: ["/achievements/VU-Hackathon.jpg", "/achievements/VU-Hackathon-2.jpg"]
     },
 ];
 

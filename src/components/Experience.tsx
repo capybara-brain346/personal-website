@@ -26,7 +26,7 @@ const experiences: Job[] = [
       "Object Detection & Deployment: Trained custom object detection models (YOLOv8n, YOLOv8l, YOLOv11n, MobileNetV2) using RoboFlow. Integrated YOLO models into Snap Lens Studio for real-time AR filters.",
       "Scalable API & Cloud Infrastructure: Deployed AI models via REST APIs with Flask and Django. Leveraged AWS services including Lambda, SageMaker, API Gateway, and PostgreSQL."
     ],
-    logo: "/ronin_labs.jpg",
+    logo: "/orgs/ronin_labs.jpg",
     skills: ["Python", "Flask", "Pytorch", "Huggingface", "LLMs", "Stable Diffusion", "Automatic1111", "Comfy UI", "Llama LLMs"]
   },
 ];

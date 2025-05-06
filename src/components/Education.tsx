@@ -7,7 +7,7 @@ const educationData = [
     degree: "Bachelor of Engineering In Artificial Intelligence & Data Science",
     university: "D.Y.Patil College Of Engineering, Akurdi",
     period: "Nov 2022 - Present",
-    image: "/dypcoe-image.jpg",
+    image: "/orgs/dypcoe-image.jpg",
   },
 ];
 
