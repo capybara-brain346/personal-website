@@ -51,7 +51,7 @@ const projects: Project[] = [
       "RecycleNet is a deep learning-based project designed to classify images of recyclable items into 30 distinct categories. 📦",
     ],
     technologies: ["Python", "Streamlit", "Pytorch", "Ollama", "Langchain"],
-    image: "/recyclenet.png",
+    image: "/projects/recyclenet.png",
     githubLink: "https://github.com/capybara-brain346/RecycleNet18",
   },
   {
