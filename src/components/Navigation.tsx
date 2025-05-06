@@ -10,12 +10,17 @@ const Navigation: React.FC = () => {
       <Link href="#skills" className="text-gray-400 hover:text-white">
         Skills
       </Link>
-      {/* <Link href="#experience" className="text-gray-400 hover:text-white">Experience</Link> */}
+      <Link href="#experience" className="text-gray-400 hover:text-white">
+        Experience
+      </Link>
       <Link href="#education" className="text-gray-400 hover:text-white">
         Education
       </Link>
       <Link href="#projects" className="text-gray-400 hover:text-white">
         Projects
+      </Link>
+      <Link href="#club-experience" className="text-gray-400 hover:text-white">
+        Club Experience
       </Link>
     </nav>
   );
