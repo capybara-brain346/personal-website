@@ -19,12 +19,11 @@ const experiences: Job[] = [
     location: "India",
     period: "Jan 2025 - Present",
     description: [
-      "Multi-Modal AI Product Development: Developed high-quality image and video generation pipelines using Stable Diffusion models (SDXL, RealVisXL_V5.0_Lightning, DreamShaper, Flux1, epicRealism), combined with RunwayML, FreePic, and OpenCV for postprocessing. Integrated ElevenLabs for AI voiceovers.",
-      "Advanced Video Generation Workflows: Implemented state-of-the-art text-to-video generation models including AnimeDiff, DynamicCrafter, and Step-Video T2V. Built depth-based motion effect pipelines using Depth Anything v2 and DepthFlow.",
-      "Generative Agents & LLM Engineering: Built graph-based autonomous agents using LangGraph. Implemented multiple GPT models for context-aware reasoning. Fine-tuned Meta's LLaMA and OpenAI APIs for chatbots and content generation.",
-      "Semantic NLP Systems: Designed semantic text matching system using BERT, LLaMA 2, and regex-based heuristics. Incorporated TrOCR for OCR-based PDF extraction and document retrieval.",
-      "Object Detection & Deployment: Trained custom object detection models (YOLOv8n, YOLOv8l, YOLOv11n, MobileNetV2) using RoboFlow. Integrated YOLO models into Snap Lens Studio for real-time AR filters.",
-      "Scalable API & Cloud Infrastructure: Deployed AI models via REST APIs with Flask and Django. Leveraged AWS services including Lambda, SageMaker, API Gateway, and PostgreSQL."
+      "Developed multi-modal AI products using advanced image and video generation techniques.",
+      "Implemented cutting-edge text-to-video models and depth-based motion effects.",
+      "Built autonomous agents and fine-tuned LLMs for various applications.",
+      "Trained and deployed custom object detection models for AR applications.",
+      "Created scalable AI model APIs and leveraged cloud services for deployment."
     ],
     logo: "/orgs/ronin_labs.jpg",
     skills: ["Python", "Flask", "Pytorch", "Huggingface", "LLMs", "Stable Diffusion", "Automatic1111", "Comfy UI", "Llama LLMs"]

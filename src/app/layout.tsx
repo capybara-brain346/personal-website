@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-import { ChatButton } from "@/components/ui/chat-button";
-import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,9 +37,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn(GeistSans.variable, GeistMono.variable)}>
-      <body>
-        <ChatButton />
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${inter.className} bg-background text-foreground overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>
