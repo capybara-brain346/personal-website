@@ -1,10 +1,16 @@
-"use client"
+"use client";
+
 /* eslint-disable react/no-unknown-property */
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame, useThree, ThreeEvent } from "@react-three/fiber";
 import { EffectComposer, wrapEffect } from "@react-three/postprocessing";
 import { Effect } from "postprocessing";
 import * as THREE from "three";
+
+// Ensure we're on the client side
+if (typeof window === 'undefined') {
+  console.warn('Dither component should only be rendered on the client side');
+}
 
 const waveVertexShader = `
 precision highp float;

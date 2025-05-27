@@ -9,7 +9,11 @@ import SocialLinks from "../components/SocialLinks";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Achievements from "@/components/Achievements";
-import Dither from '../components/ui/Dither/Dither';
+import dynamic from 'next/dynamic';
+
+const Dither = dynamic(() => import('../components/ui/Dither/Dither'), {
+  ssr: false,
+});
 
 
 
