@@ -2,29 +2,19 @@ import React from 'react';
 import Image from "next/legacy/image";
 import { ChipList } from './Chips';
 
-interface Job {
-  title: string;
-  company: string;
-  location: string;
-  period: string;
-  description: string[];
-  logo: string;
-  skills: string[];
-}
-
-const experiences: Job[] = [
+const experiences = [
   {
     title: "AI Engineer Intern",
     company: "Ronin Labs Pvt Limited",
     location: "India",
     period: "Jan 2025 - Present",
     description: [
-      "Multi-Modal AI Product Development: Developed high-quality image and video generation pipelines using Stable Diffusion models (SDXL, RealVisXL_V5.0_Lightning, DreamShaper, Flux1, epicRealism), combined with RunwayML, FreePic, and OpenCV for postprocessing. Integrated ElevenLabs for AI voiceovers.",
-      "Advanced Video Generation Workflows: Implemented state-of-the-art text-to-video generation models including AnimeDiff, DynamicCrafter, and Step-Video T2V. Built depth-based motion effect pipelines using Depth Anything v2 and DepthFlow.",
-      "Generative Agents & LLM Engineering: Built graph-based autonomous agents using LangGraph. Implemented multiple GPT models for context-aware reasoning. Fine-tuned Meta's LLaMA and OpenAI APIs for chatbots and content generation.",
-      "Semantic NLP Systems: Designed semantic text matching system using BERT, LLaMA 2, and regex-based heuristics. Incorporated TrOCR for OCR-based PDF extraction and document retrieval.",
-      "Object Detection & Deployment: Trained custom object detection models (YOLOv8n, YOLOv8l, YOLOv11n, MobileNetV2) using RoboFlow. Integrated YOLO models into Snap Lens Studio for real-time AR filters.",
-      "Scalable API & Cloud Infrastructure: Deployed AI models via REST APIs with Flask and Django. Leveraged AWS services including Lambda, SageMaker, API Gateway, and PostgreSQL."
+      "Multi-Modal AI Development: Built image/video generation pipelines using Stable Diffusion models (SDXL, DreamShaper, RealVisXL, Flux1, epicRealism). Created advanced ComfyUI workflows and integrated RunwayML, FreePic, OpenCV, and ElevenLabs for post-processing and voice synthesis.",
+      "Text-to-Video & Motion Effects: Implemented T2V models (AnimeDiff, DynamicCrafter, Step-Video T2V) and depth-based motion effects using Depth Anything v2 and DepthFlow.",
+      "LLM Engineering & Generative Agents: Developed autonomous agents using LangGraph and multi-GPT pipelines. Fine-tuned LLaMA and OpenAI APIs for conversational AI and content generation.",
+      "Semantic NLP & Document Processing: Designed semantic search systems with BERT, LLaMA 2, and regex heuristics. Used TrOCR for OCR and structured PDF extraction.",
+      "Object Detection & AR Integration: Trained custom models (YOLOv8n/l, YOLOv11n, MobileNetV2) using Roboflow. Deployed real-time AR filters via Snap Lens Studio.",
+      "API & Cloud Deployment: Delivered scalable REST APIs with Flask and Django. Deployed models on AWS (Lambda, SageMaker, API Gateway, PostgreSQL)."
     ],
     logo: "/orgs/ronin_labs.jpg",
     skills: ["Python", "Flask", "Pytorch", "Huggingface", "LLMs", "Stable Diffusion", "Automatic1111", "Comfy UI", "Llama LLMs"]
