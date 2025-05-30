@@ -9,12 +9,6 @@ import SocialLinks from "../components/SocialLinks";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Achievements from "@/components/Achievements";
-import dynamic from 'next/dynamic';
-
-const Dither = dynamic(() => import('../components/ui/Dither/Dither'), {
-  ssr: false,
-});
-
 
 
 export default function Home() {
@@ -27,18 +21,6 @@ export default function Home() {
             <Header />
             <div className="mt-6 mb-6">
               <SocialLinks />
-            </div>
-            <div style={{ width: '100%', height: '175px', position: 'relative' }} className="border-2 rounded-3xl overflow-hidden">
-              <Dither
-                waveColor={[0.5, 0.5, 0.5]}
-                disableAnimation={false}
-                enableMouseInteraction={true}
-                mouseRadius={0.3}
-                colorNum={4}
-                waveAmplitude={0.3}
-                waveFrequency={3}
-                waveSpeed={0.05}
-              />
             </div>
           </div>
           <About />
@@ -58,18 +40,6 @@ export default function Home() {
             <Header />
             <div className="mt-6 mb-6">
               <SocialLinks />
-            </div>
-            <div style={{ width: '100%', height: '200px', position: 'relative' }} className="border-2 rounded-3xl overflow-hidden">
-              <Dither
-                waveColor={[0.5, 0.5, 0.5]}
-                disableAnimation={false}
-                enableMouseInteraction={true}
-                mouseRadius={0.3}
-                colorNum={4}
-                waveAmplitude={0.3}
-                waveFrequency={3}
-                waveSpeed={0.05}
-              />
             </div>
           </div>
           <About />
@@ -91,19 +61,6 @@ export default function Home() {
             <Header />
             <div className="mt-6 mb-6">
               <SocialLinks />
-            </div>
-            <div style={{ width: '100%', height: '250px', position: 'relative' }} className="border-2 rounded-3xl overflow-hidden">
-              <Dither
-                waveColor={[0.5, 0.5, 0.5]}
-                disableAnimation={false}
-                enableMouseInteraction={true}
-                mouseRadius={0.3}
-                colorNum={4}
-                waveAmplitude={0.3}
-                waveFrequency={3}
-                waveSpeed={0.05}
-                pixelSize={1}
-              />
             </div>
           </div>
         </div>

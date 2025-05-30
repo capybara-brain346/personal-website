@@ -5,7 +5,7 @@ import Image from "next/legacy/image";
 
 const GlowingProfile = () => {
   return (
-    <div className="relative w-[150px] h-[150px] mb-6">
+    <div className="relative w-[250px] h-[250px] mt-8 mb-8">
       {/* Loading animation ring */}
       <div className="absolute -inset-2">
         {/* Rotating gap ring */}
@@ -33,7 +33,7 @@ const GlowingProfile = () => {
       <div className="absolute inset-0 rounded-full animate-pulse bg-green-400/20 blur-sm" />
 
       {/* Profile picture container */}
-      <div className="relative w-[150px] h-[150px] overflow-hidden rounded-full ring-1 ring-green-400/30 pointer-events-none select-none">
+      <div className="relative w-[250px] h-[250px] overflow-hidden rounded-full ring-1 ring-green-400/30 pointer-events-none select-none">
         <Image
           src="/profile-pic.png"
           alt="Piyush Choudhari"
