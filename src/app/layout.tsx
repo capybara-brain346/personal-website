@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ChatButton } from "@/components/ui/chat-button";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial']
+});
 
 export const metadata: Metadata = {
   title: "Piyush Choudhari",
@@ -41,8 +45,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn(GeistSans.variable, GeistMono.variable)}>
-      <body>
+    <html lang="en" className={poppins.className}>
+      <body className={poppins.className}>
         <ChatButton />
         {children}
       </body>
