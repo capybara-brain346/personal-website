@@ -14,6 +14,22 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "TrackML",
+    description: [
+      "Comprehensive tool for tracking and managing machine learning models.",
+    ],
+    technologies: [
+      "Python",
+      "Langchain",
+      "Flask",
+      "React",
+      "Webscraping",
+      "Dockers",
+    ],
+    image: "/projects/TrackML.png",
+    githubLink: "https://github.com/capybara-brain346/TrackML-Backend",
+  },
+  {
     name: "AtjBot",
     description: [
       "Developed a Retrieval-Augmented Generation based chatbot for the official website of Department Of Justice India.",
