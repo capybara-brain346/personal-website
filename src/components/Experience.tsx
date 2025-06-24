@@ -9,31 +9,21 @@ const experiences = [
     title: "AI Engineer Intern",
     company: "Ronin Labs Pvt Limited",
     location: "India",
-    period: "Jan 2025 - Present",
+    period: "Jan 2025 - Jul 2025",
     description: [
-      "Reelskit",
-      "    Built an AI agent that automates video creation by combining chat input, video effects, and music — making content generation fast and interactive",
-      "    Designed a web tool for editing and customizing videos using intuitive timeline controls and 3D video effects",
-      "    Implemented smart image expansion features that let users enhance images beyond their original size, based on simple prompts",
-      "    Created tools for applying animation and special effects to videos, driven by user settings and visual depth data",
-      "    Integrated an AI music tool that generates background tracks based on visuals, making every video feel unique",
-      "    Optimized the system's performance, keeping task processing times under 20 seconds end-to-end",
-      "Sketchbot",
-      "    Developed a system that turns user photos into artistic line drawings using AI models",
-      "    Set up a Raspberry Pi to run this service locally with both the website and backend, making it accessible from anywhere",
-      "    Simplified and modernized the server setup, cutting memory usage by over 35% and improving reliability",
-      "    Shifted the backend to a more structured, scalable design and integrated cloud storage for better asset handling",
-      "OnePlus13s Quiz",
-      "    Built fast and reliable APIs for a global quiz contest with over 10,000 participants",
-      "    Created an admin dashboard that allows non-technical staff to manage quiz content easily",
-      "    Ensured the platform ran smoothly for users across the globe by managing the cloud database infrastructure",
-      "Proof of Concepts (POCs)",
-      "    Built a system that detects faces in live video using AWS tools, useful for smart surveillance or live video enhancement",
-      "    Prototyped a webcam feature that transforms live video into AI-generated art in real time",
-      "    Developed a pipeline to create 360° panoramic images using AI, useful for virtual tours and immersive experiences"
+      "Reelskit – GenAI Video Agent",
+      "    Built a modular agent using LangGraph & GPT for dynamic video generation (chat, FX, music).",
+      "    Developed a web-based editor (DepthFlow, Stable Diffusion XL, ControlNets) for customizable visual scenes.",
+      "    Reduced generation latency to <20s through backend optimization.",
+      "Sketchbot – AI Drawing on Raspberry Pi",
+      "    Created an offline-capable image generation system with ControlNet & Antelopev2.",
+      "    Deployed full-stack solution (FastAPI, AWS EC2, Nginx), cutting server costs by 30%.",
+      "OnePlus 13s Quiz Campaign",
+      "    Built fast, scalable APIs (Node.js, TypeScript) for a 70K+ user global event.",
+      "    Developed Django admin panel and managed GCP Cloud SQL infrastructure."
     ],
     logo: "/orgs/ronin_labs.jpg",
-    skills: ["Python", "Flask", "Pytorch", "Huggingface", "LLMs", "Stable Diffusion", "Automatic1111", "Comfy UI", "Llama LLMs"]
+    skills: ["Python", "Typescript", "FastAPI", "Node.js", "Pytorch", "Huggingface", "LLMs", "Stable Diffusion", "Automatic1111", "Comfy UI", "Llama LLMs"]
   },
 ];
 

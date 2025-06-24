@@ -17,61 +17,109 @@ const CONTEXT = `
         <company>Ronin Labs</company>
         <duration>Jan 2025 - Present</duration>
         <responsibilities>
-            <item>Built media generation pipelines using Stable Diffusion models and RunwayML, OpenCV integration, and ElevenLabs for voiceovers.</item>
-            <item>Worked on state-of-the-art text-to-video models and depth-based cinematic motion effects.</item>
-            <item>Built graph-based generative agents using LangGraph and fine-tuned LLaMA and OpenAI models.</item>
-            <item>Developed semantic matching pipelines with BERT, LLaMA 2, TrOCR-based OCR.</item>
-            <item>Trained object detection models (YOLOv8, YOLOv11, MobileNetV2) for AR filters using Snap Lens Studio.</item>
-            <item>Deployed scalable APIs using Flask, AWS Lambda, SageMaker, and PostgreSQL.</item>
+            <project name="Reelskit – GenAI Video Agent">
+                <item>Built a modular agent using LangGraph & GPT for dynamic video generation (chat, FX, music)</item>
+                <item>Developed a web-based editor (DepthFlow, Stable Diffusion XL, ControlNets) for customizable visual scenes</item>
+                <item>Reduced generation latency to <20s through backend optimization</item>
+            </project>
+            <project name="Sketchbot – AI Drawing on Raspberry Pi">
+                <item>Created an offline-capable image generation system with ControlNet & Antelopev2</item>
+                <item>Deployed full-stack solution (FastAPI, AWS EC2, Nginx), cutting server costs by 30%</item>
+            </project>
+            <project name="OnePlus 13s Quiz Campaign">
+                <item>Built fast, scalable APIs (Node.js, TypeScript) for a 70K+ user global event</item>
+                <item>Developed Django admin panel and managed GCP Cloud SQL infrastructure</item>
+            </project>
         </responsibilities>
+        <skills>Python, Typescript, FastAPI, Node.js, Pytorch, Huggingface, LLMs, Stable Diffusion, Automatic1111, Comfy UI, Llama LLMs</skills>
     </experience>
+
+    <club_experience>
+        <role>AIML Team Lead</role>
+        <organization>Intel AI Students Club</organization>
+        <duration>2024 - 2025</duration>
+        <responsibilities>
+            <item>Led a team of AI/ML enthusiasts in developing projects and organizing technical workshops</item>
+            <item>Mentored junior members in AI/ML concepts, computer vision, and LLM applications</item>
+            <item>Organized hands-on workshops and technical sessions on emerging AI technologies</item>
+        </responsibilities>
+        <projects>
+            <project>
+                <name>Gesture-based TicTacToe</name>
+                <description>Interactive game using computer vision with OpenCV and MediaPipe, featuring an AI opponent</description>
+                <github>https://github.com/IASC-DYPCOE/OpenCV-Tic-Tac-Toe</github>
+            </project>
+            <project>
+                <name>AI Dungeon Master</name>
+                <description>Dynamic D&D game utilizing Gemini LLM for story generation and character interactions</description>
+                <github>https://github.com/IASC-DYPCOE/LLM-Role-Playing-Game</github>
+            </project>
+        </projects>
+        <technologies>Python, OpenCV, MediaPipe, Gemini LLM, FastAPI, Streamlit</technologies>
+    </club_experience>
     
     <projects>
         <project>
+            <name>TrackML</name>
+            <description>Comprehensive tool for tracking and managing machine learning models</description>
+            <technologies>Python, Langchain, Flask, React, Webscraping, Dockers</technologies>
+            <github>https://github.com/capybara-brain346/TrackML-Backend</github>
+        </project>
+        <project>
             <name>AtjBot</name>
-            <description>RAG chatbot for the Department of Justice India website using LangChain, ChromaDB, and Google Generative AI.</description>
+            <description>RAG-based chatbot for the Department Of Justice India website</description>
+            <technologies>Python, Langchain, Flask, React, Webscraping, Dockers</technologies>
             <github>https://github.com/capybara-brain346/atjbot</github>
         </project>
         <project>
+            <name>Mars Weather Data ETL Pipeline</name>
+            <description>Automated ETL pipeline for NASA's InSight API Mars weather data using Java and MongoDB</description>
+            <technologies>Java, MongoDB, MySQL, JDBC, Apache Airflow, Dockers</technologies>
+            <github>https://github.com/capybara-brain346/Mars-Data-ETL-Pipeline</github>
+        </project>
+        <project>
             <name>RecycleNet18</name>
-            <description>Recyclable item image classification (ResNet18) + fine-tuned Gemma-1.1-2b chatbot for recycling advice.</description>
+            <description>Deep learning model to classify images of recyclable items into 30 categories</description>
+            <technologies>Python, Streamlit, Pytorch, Ollama, Langchain</technologies>
             <github>https://github.com/capybara-brain346/RecycleNet18</github>
-            <demo>https://www.youtube.com/watch?v=K3wz3cSf9is</demo>
         </project>
         <project>
             <name>SAP Stocks</name>
-            <description>Financial news sentiment analysis platform using LangChain RAG, Gemini-1.5-Flash, and finBERT.</description>
-            <github>https://github.com/capybara-brain346/SAP-Stock</github>
+            <description>Real-time stock insights and AI-powered chatbot for market analysis</description>
+            <technologies>Python, React, Flask, Langchain, Ollama</technologies>
+            <github>https://github.com/capybara-brain346/SAP-Stocks</github>
         </project>
     </projects>
-    
-    <volunteering>
-        <activity>
-            <organization>Intel AI Students Club</organization>
-            <role>AIML Team Lead</role>
-            <projects>
-                <item>Gesture-based TicTacToe using OpenCV and MediaPipe with AI opponent.</item>
-                <item>AI Dungeon Master DnD game using Gemini LLM, FastAPI, and Streamlit.</item>
-            </projects>
-        </activity>
-    </volunteering>
-
-    <skills>
-        <languages>Python, Java, SQL, JavaScript, Bash</languages>
-        <ai_models>Stable Diffusion (SDXL, RealVisXL_V5.0_Lightning, DreamShaper, Flux1, epicRealism), AnimeDiff, DynamicCrafter, Step-Video T2V</ai_models>
-        <tools>OpenCV, DepthFlow, RunwayML, FreePic, LangGraph, LangChain, Hugging Face Transformers, OpenAI SDKs, Gemini SDKs, SentencePiece</tools>
-        <api_development>FastAPI, Flask, Django, REST APIs</api_development>
-        <cloud_services>AWS (Lambda, SageMaker, API Gateway, S3), Docker, Render, Vercel</cloud_services>
-        <databases>PostgreSQL, MySQL, MongoDB, SQLite3, ChromaDB</databases>
-        <devops>GitHub Actions, Docker Compose</devops>
-        <platforms>Snap Lens Studio, RoboFlow, ElevenLabs, Git, GitHub, Streamlit, Gradio</platforms>
-    </skills>
 
     <achievements>
-        <item>1st Rank - Software Category at SIH Internal Hackathon</item>
-        <item>2nd Rank - Data Visualization Hackathon, ISA Club, D.Y.Patil College</item>
-        <item>4th Rank - Visionary Hackathon, Vishwakarma University & Binghamton University</item>
+        <item>
+            <title>Indovate AI Sprint Hackathon</title>
+            <position>First Place 🏆</position>
+            <organization>IEEE CIS CCEW</organization>
+            <year>2025</year>
+        </item>
+        <item>
+            <title>Data Visualization Hackathon</title>
+            <position>Second Place 🏆</position>
+            <organization>Intellex AI Students Club</organization>
+            <year>2024</year>
+        </item>
+        <item>
+            <title>VU Visionary Techfest Hackathon</title>
+            <position>Fourth Place 🏆</position>
+            <organization>Vishwakarma University</organization>
+            <year>2024</year>
+        </item>
     </achievements>
+
+    <skills>
+        <languages>Python, Java, TypeScript, JavaScript</languages>
+        <frameworks>FastAPI, Flask, React, Node.js, Django</frameworks>
+        <ai_ml>PyTorch, Langchain, LangGraph, Hugging Face, OpenAI, Gemini, Stable Diffusion, ControlNet</ai_ml>
+        <cloud>AWS (EC2, Lambda, SageMaker), GCP Cloud SQL, Docker, Nginx</cloud>
+        <databases>MongoDB, PostgreSQL, MySQL, SQLite3, ChromaDB</databases>
+        <tools>Git, OpenCV, MediaPipe, Apache Airflow</tools>
+    </skills>
 
     <education>
         <college>D.Y.Patil College Of Engineering, Akurdi</college>
