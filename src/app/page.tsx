@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -8,9 +9,31 @@ import ClubExperience from "../components/ClubExperience";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Achievements from "@/components/Achievements";
-import { Pointer } from "@/components/magicui/pointer";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Home() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (document.documentElement.scrollTop > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Mobile Layout */}
@@ -72,6 +95,16 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Back to Top Button - Single instance for all layouts */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 p-4 rounded-full bg-[#1a1a1a] border border-white/20 text-white transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r hover:from-cyan-500 hover:via-purple-500 hover:to-orange-500 ${showButton ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+        aria-label="Back to top"
+      >
+        <FaArrowUp className="h-5 w-5" />
+      </button>
     </div>
   );
 }
