@@ -25,7 +25,8 @@ const Header: React.FC = () => {
               <div className="bg-gradient-to-r from-cyan-500 via-purple-500 to-orange-500 text-transparent bg-clip-text text-center sm:text-left">
                 <h1 className="text-2xl sm:text-3xl font-bold mb-1">Piyush Choudhari</h1>
               </div>
-              <h2 className="text-gray-400 text-sm sm:text-base mb-3 text-center sm:text-left">AI & Backend Engineer</h2>
+              <h2 className="text-gray-400 text-sm sm:text-base mb-1 text-center sm:text-left">AI & Backend Engineer</h2>
+              <p className="text-gray-400 text-sm mb-3 text-center sm:text-left">📍 Pune, Maharashtra</p>
 
               {/* Social Links and Resume Button */}
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
