@@ -47,47 +47,76 @@ const Achievements: React.FC = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false
+        autoplaySpeed: 3000,
+        arrows: false,
+        adaptiveHeight: false,
+        pauseOnHover: true,
+        dotsClass: "slick-dots",
+        className: "h-full"
     };
 
     return (
-        <section className="w-full max-w-6xl mx-auto">
+        <section className="w-full pb-16">
             <h2 className="text-3xl font-bold mb-8">Achievements</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {achievements.map((achievement, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className="bg-black bg-opacity-10 p-6 rounded-xl border-2 mb-10 hover:border-blue-500 transition-all duration-300"
+                        className="bg-[#0A0A0A] p-6 rounded-xl border border-[#1a1a1a] hover:border-blue-500/50 transition-all duration-300 flex flex-col min-h-[520px] mb-8"
                     >
-                        <div className="mb-4 w-full h-64 md:h-48 relative overflow-hidden rounded-lg">
-                            <Slider {...sliderSettings}>
-                                {achievement.images.map((image, imageIndex) => (
-                                    <div key={imageIndex} className="relative h-64 md:h-48">
-                                        <Image
-                                            src={image}
-                                            alt={`${achievement.title} - Image ${imageIndex + 1}`}
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                ))}
-                            </Slider>
+                        <div className="relative w-full h-[300px] mb-8 overflow-hidden rounded-lg bg-black">
+                            <div className="slick-container h-full [&_.slick-slider]:!h-full [&_.slick-list]:!h-full [&_.slick-track]:!h-full [&_.slick-slide]:!h-full [&_.slick-slide>div]:!h-full">
+                                <Slider {...sliderSettings}>
+                                    {achievement.images.map((image, imageIndex) => (
+                                        <div key={imageIndex} className="h-full">
+                                            <div className="relative h-full w-full">
+                                                <Image
+                                                    src={image}
+                                                    alt={`${achievement.title} - Image ${imageIndex + 1}`}
+                                                    fill
+                                                    className="object-contain"
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                    priority={index === 0}
+                                                />
+                                            </div>
+                                        </div>
+                                    ))}
+                                </Slider>
+                            </div>
                         </div>
-                        <h3 className="text-xl font-semibold mb-2">{achievement.title}</h3>
-                        <p className="text-gray-400 mb-3">{achievement.description}</p>
-                        <div className="flex justify-between items-center text-sm text-gray-500">
+                        <div className="flex-grow">
+                            <h3 className="text-xl font-semibold mb-3 text-gray-100">{achievement.title}</h3>
+                            <p className="text-lg font-medium text-blue-400 mb-4">{achievement.description}</p>
+                        </div>
+                        <div className="flex justify-between items-center text-sm text-gray-400 mt-4 pt-4 border-t border-[#1a1a1a]">
                             <span>{achievement.date}</span>
                             {achievement.organization && (
-                                <span>{achievement.organization}</span>
+                                <span className="text-right max-w-[60%]">{achievement.organization}</span>
                             )}
                         </div>
                     </motion.div>
                 ))}
             </div>
+            <style jsx global>{`
+                .slick-dots {
+                    bottom: -35px !important;
+                }
+                .slick-dots li {
+                    margin: 0 4px !important;
+                }
+                .slick-dots li button:before {
+                    color: #666 !important;
+                    font-size: 8px !important;
+                    opacity: 0.5;
+                }
+                .slick-dots li.slick-active button:before {
+                    color: #fff !important;
+                    opacity: 1;
+                }
+            `}</style>
         </section>
     );
 };

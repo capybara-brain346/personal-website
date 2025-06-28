@@ -72,15 +72,15 @@ void main() {
   vec2  tex        = uv * uScale;
   float tOffset    = uSpeed * uTime;
 
-  tex.y += 0.03 * sin(8.0 * tex.x - tOffset);
+  tex.y += 0.02 * sin(6.0 * tex.x - tOffset);
 
-  float pattern = 0.6 +
-                  0.4 * sin(5.0 * (tex.x + tex.y +
-                                   cos(3.0 * tex.x + 5.0 * tex.y) +
-                                   0.02 * tOffset) +
-                           sin(20.0 * (tex.x + tex.y - 0.1 * tOffset)));
+  float pattern = 0.7 +
+                  0.3 * sin(4.0 * (tex.x + tex.y +
+                                   cos(2.0 * tex.x + 4.0 * tex.y) +
+                                   0.01 * tOffset) +
+                           sin(15.0 * (tex.x + tex.y - 0.05 * tOffset)));
 
-  vec4 col = vec4(uColor, 1.0) * vec4(pattern) - rnd / 15.0 * uNoiseIntensity;
+  vec4 col = vec4(uColor, 1.0) * vec4(pattern) - rnd / 20.0 * uNoiseIntensity;
   col.a = 1.0;
   gl_FragColor = col;
 }
@@ -94,14 +94,15 @@ const SilkPlane = forwardRef<Mesh, SilkPlaneProps>(function SilkPlane(
     { uniforms },
     ref
 ) {
-    const { viewport } = useThree();
+    const { viewport, size } = useThree();
 
     useLayoutEffect(() => {
         const mesh = ref as React.MutableRefObject<Mesh | null>;
         if (mesh.current) {
-            mesh.current.scale.set(viewport.width, viewport.height, 1);
+            const scale = Math.max(2, Math.max(viewport.width, viewport.height));
+            mesh.current.scale.set(scale, scale, 1);
         }
-    }, [ref, viewport]);
+    }, [ref, viewport, size]);
 
     useFrame((_state: RootState, delta: number) => {
         const mesh = ref as React.MutableRefObject<Mesh | null>;
@@ -115,11 +116,12 @@ const SilkPlane = forwardRef<Mesh, SilkPlaneProps>(function SilkPlane(
 
     return (
         <mesh ref={ref}>
-            <planeGeometry args={[1, 1, 1, 1]} />
+            <planeGeometry args={[1, 1]} />
             <shaderMaterial
                 uniforms={uniforms}
                 vertexShader={vertexShader}
                 fragmentShader={fragmentShader}
+                transparent={true}
             />
         </mesh>
     );
@@ -156,19 +158,39 @@ const Silk: React.FC<SilkProps> = ({
     );
 
     return (
-        <Canvas
-            dpr={[1, 2]}
-            frameloop="always"
-            style={{
-                width: '100%',
-                height: '100%',
-                position: 'absolute',
-                top: 0,
-                left: 0,
-            }}
-        >
-            <SilkPlane ref={meshRef} uniforms={uniforms} />
-        </Canvas>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <Canvas
+                dpr={[1, 1.5]}
+                frameloop="always"
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    touchAction: 'none',
+                    pointerEvents: 'none',
+                }}
+                gl={{
+                    antialias: false,
+                    powerPreference: "high-performance",
+                    alpha: true,
+                    preserveDrawingBuffer: true,
+                }}
+                resize={{
+                    scroll: false,
+                    debounce: { scroll: 50, resize: 0 }
+                }}
+                camera={{
+                    position: [0, 0, 1],
+                    near: 0.1,
+                    far: 1000,
+                    fov: 75
+                }}
+            >
+                <SilkPlane ref={meshRef} uniforms={uniforms} />
+            </Canvas>
+        </div>
     );
 };
 
