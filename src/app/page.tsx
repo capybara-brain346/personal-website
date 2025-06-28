@@ -8,6 +8,7 @@ import ClubExperience from "../components/ClubExperience";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Achievements from "@/components/Achievements";
+import { Pointer } from "@/components/magicui/pointer";
 
 export default function Home() {
   return (
