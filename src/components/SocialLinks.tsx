@@ -1,7 +1,7 @@
 // SocialLinks.tsx
 "use client";
 import React from "react";
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 
@@ -18,31 +18,29 @@ const SocialLinks: React.FC = () => {
   return (
     <div className="flex items-center gap-2 lg:gap-3">
       <Button variant="outline" size="icon" asChild className={buttonClass}>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-          <svg width={getIconSize()} height={getIconSize()} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400 hover:text-white transition-colors">
-            <path d="M23 12L1 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M9 4L1 12L9 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+        <a href="https://www.linkedin.com/in/piyush-choudhari/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin size={getIconSize()} className="text-gray-400 hover:text-white transition-colors" />
         </a>
       </Button>
 
       <Button variant="outline" size="icon" asChild className={buttonClass}>
-        <a href="mailto:example@email.com" aria-label="Email">
+        <a href="https://github.com/capybara-brain346" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub size={getIconSize()} className="text-gray-400 hover:text-white transition-colors" />
+        </a>
+      </Button>
+
+      <Button variant="outline" size="icon" asChild className={buttonClass}>
+        <a href="mailto:choudhari.piyush@gmail.com" aria-label="Email">
           <FaEnvelope size={getIconSize()} className="text-gray-400 hover:text-white transition-colors" />
         </a>
       </Button>
 
       <Button variant="outline" size="icon" asChild className={buttonClass}>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+        <a href="https://x.com/piyush_yip" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
           <FaXTwitter size={getIconSize()} className="text-gray-400 hover:text-white transition-colors" />
         </a>
       </Button>
 
-      <Button variant="outline" size="icon" asChild className={buttonClass}>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <FaGithub size={getIconSize()} className="text-gray-400 hover:text-white transition-colors" />
-        </a>
-      </Button>
     </div>
   );
 };

@@ -34,9 +34,9 @@ const Header: React.FC = () => {
             {/* Text content */}
             <div className="flex flex-col justify-center items-center sm:items-start">
               <div className="bg-gradient-to-r from-cyan-500 via-purple-500 to-orange-500 text-transparent bg-clip-text text-center sm:text-left">
-                <h1 className="text-xl sm:text-2xl font-bold mb-0.5">Michael Shimeles</h1>
+                <h1 className="text-xl sm:text-2xl font-bold mb-0.5">Piyush Choudhari</h1>
               </div>
-              <h2 className="text-gray-400 text-sm mb-2 text-center sm:text-left">Software Engineer @ Tempo</h2>
+              <h2 className="text-gray-400 text-sm mb-2 text-center sm:text-left">AI & Backend Engineer</h2>
 
               {/* Social Links and Resume Button */}
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
