@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -11,6 +12,27 @@ import Footer from "../components/Footer";
 import Achievements from "@/components/Achievements";
 import { FaArrowUp } from "react-icons/fa";
 import { Pointer } from "@/components/magicui/pointer";
+
+interface AnimatedSectionProps {
+  children: ReactNode;
+  delay?: number;
+}
+
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, delay = 0 }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.8,
+        delay: delay,
+        ease: [0.43, 0.13, 0.23, 0.96]
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -40,34 +62,38 @@ export default function Home() {
       {/* Mobile Layout */}
       <div className="md:hidden flex flex-col min-h-screen">
         <main className="p-4 max-w-screen-sm mx-auto flex-grow">
-          <div className="mb-8">
-            <Header />
-          </div>
-          <About />
-          <Skills />
-          <Experience />
-          <Education />
-          <Projects />
-          <ClubExperience />
-          <Achievements />
-          <Footer />
+          <AnimatedSection delay={0}>
+            <div className="mb-8">
+              <Header />
+            </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}><About /></AnimatedSection>
+          <AnimatedSection delay={0.2}><Skills /></AnimatedSection>
+          <AnimatedSection delay={0.3}><Experience /></AnimatedSection>
+          <AnimatedSection delay={0.4}><Education /></AnimatedSection>
+          <AnimatedSection delay={0.5}><Projects /></AnimatedSection>
+          <AnimatedSection delay={0.6}><ClubExperience /></AnimatedSection>
+          <AnimatedSection delay={0.7}><Achievements /></AnimatedSection>
+          <AnimatedSection delay={0.8}><Footer /></AnimatedSection>
         </main>
       </div>
 
       {/* Tablet Layout */}
       <div className="hidden md:flex lg:hidden flex-col min-h-screen">
         <main className="p-6 max-w-3xl mx-auto flex-grow">
-          <div className="mb-8">
-            <Header />
-          </div>
-          <About />
-          <Skills />
-          <Experience />
-          <Education />
-          <Projects />
-          <ClubExperience />
-          <Achievements />
-          <Footer />
+          <AnimatedSection delay={0}>
+            <div className="mb-8">
+              <Header />
+            </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}><About /></AnimatedSection>
+          <AnimatedSection delay={0.2}><Skills /></AnimatedSection>
+          <AnimatedSection delay={0.3}><Experience /></AnimatedSection>
+          <AnimatedSection delay={0.4}><Education /></AnimatedSection>
+          <AnimatedSection delay={0.5}><Projects /></AnimatedSection>
+          <AnimatedSection delay={0.6}><ClubExperience /></AnimatedSection>
+          <AnimatedSection delay={0.7}><Achievements /></AnimatedSection>
+          <AnimatedSection delay={0.8}><Footer /></AnimatedSection>
         </main>
       </div>
 
@@ -90,20 +116,22 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-8">
             {/* Header Section - Spans 10 columns and centered */}
             <div className="col-span-12 xl:col-start-2 xl:col-span-10 mt-12">
-              <Header />
+              <AnimatedSection delay={0}>
+                <Header />
+              </AnimatedSection>
             </div>
 
             {/* Main Content */}
             <div className="col-span-12 xl:col-start-2 xl:col-span-10">
               <main className="py-12 space-y-16">
-                <About />
-                <Skills />
-                <Experience />
-                <Education />
-                <Projects />
-                <ClubExperience />
-                <Achievements />
-                <Footer />
+                <AnimatedSection delay={0.1}><About /></AnimatedSection>
+                <AnimatedSection delay={0.2}><Skills /></AnimatedSection>
+                <AnimatedSection delay={0.3}><Experience /></AnimatedSection>
+                <AnimatedSection delay={0.4}><Education /></AnimatedSection>
+                <AnimatedSection delay={0.5}><Projects /></AnimatedSection>
+                <AnimatedSection delay={0.6}><ClubExperience /></AnimatedSection>
+                <AnimatedSection delay={0.7}><Achievements /></AnimatedSection>
+                <AnimatedSection delay={0.8}><Footer /></AnimatedSection>
               </main>
             </div>
           </div>
