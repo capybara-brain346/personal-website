@@ -7,10 +7,10 @@ const GlowingProfile = () => {
   return (
     <div className="relative w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px]">
       {/* Outer glow */}
-      <div className="absolute -inset-1 lg:-inset-2 bg-gradient-to-r from-cyan-500 via-purple-500 to-orange-500 rounded-full blur-md opacity-50" />
+      <div className="absolute -inset-1 lg:-inset-2 bg-gradient-to-r from-cyan-500 via-purple-500 to-orange-500 rounded-full blur-lg opacity-40 animate-gradient-x" />
 
       {/* Gradient border */}
-      <div className="absolute inset-0 rounded-full p-[2px] lg:p-[3px] bg-gradient-to-r from-cyan-500 via-purple-500 to-orange-500">
+      <div className="absolute inset-0 rounded-full p-[2px] lg:p-[3px] bg-gradient-to-r from-cyan-400 via-purple-400 to-orange-400 animate-gradient-x">
         {/* Inner gradient glow */}
         <div className="absolute inset-[1px] lg:inset-[2px] rounded-full bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-orange-500/10 blur-sm" />
 
