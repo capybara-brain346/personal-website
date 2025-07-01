@@ -13,7 +13,7 @@ const SocialLinks: React.FC = () => {
     return 18;
   };
 
-  const buttonClass = "bg-transparent border-[#1a1a1a] hover:border-transparent hover:bg-gradient-to-r hover:from-cyan-500 hover:via-purple-500 hover:to-orange-500 transition-all duration-300 lg:h-12 lg:w-12";
+  const buttonClass = "bg-transparent border-transparent hover:border-transparent hover:bg-gradient-to-r hover:from-cyan-500 hover:via-purple-500 hover:to-orange-500 transition-all duration-300 lg:h-12 lg:w-12";
 
   return (
     <div className="flex items-center gap-2 lg:gap-3">
