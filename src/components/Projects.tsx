@@ -489,7 +489,6 @@ Each Pokémon record includes:
     technologies: ["Python", "React", "Flask", "Langchain", "Ollama"],
     image: "/projects/sap_stocks.png",
     githubLink: "https://github.com/capybara-brain346/SAP-Stocks",
-    demoVideo: "https://www.youtube.com/watch?v=sap-stocks-demo",
     longDescription: `A real-time, AI-powered platform for scraping, analyzing, and querying stock-related news from 60+ sources. The system combines financial sentiment classification with a RAG-based chatbot to make market news both actionable and conversational.
 
 ---
@@ -582,19 +581,6 @@ python backend/app.py
   * Summarize bullish news on Microsoft
 * The chatbot retrieves embeddings using ChromaDB, then reasons using Gemini-1.5-Flash to generate natural answers
 
----
-
-## Project Structure
-
-backend/
-├── app.py - FastAPI or Flask server
-├── bot.py - LangChain RAG pipeline
-├── sentiment\_analysis.py - finBERT inference code
-├── web\_scrape.py - Selenium-based scraper
-└── scraped\_news.json - Output file for latest news
-
-frontend/ - ReactJS-based UI
-requirements.txt - Python dependencies
 
 ---
 
