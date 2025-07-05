@@ -1,4 +1,3 @@
-
 # Piyush's Portfolio
 
 A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.
@@ -19,7 +18,7 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Ta
 - **Framework:** Next.js 14
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **UI Components:** 
+- **UI Components:**
   - shadcn/ui
   - NextUI
   - Radix UI
@@ -54,16 +53,19 @@ src/
 ## 🚀 Getting Started
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/your-username/your-portfolio.git
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -76,10 +78,6 @@ npm run dev
 - `npm run build` - Build production bundle
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
-
-## 🙏 Credits
-
-Inspired from [Oskar Frantti Glen's Portfolio](https://github.com/OskarFranttiGlen/next-portfolio.git)
 
 ## 📄 License
 
