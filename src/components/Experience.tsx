@@ -11,7 +11,7 @@ const experiences = [
     location: "India",
     period: "Jan 2025 - Jul 2025",
     description: [
-      "Reelskit – GenAI Video Agent",
+      "Multimodal Content Generation Agent",
       "    Built a modular agent using LangGraph & GPT for dynamic video generation (chat, FX, music).",
       "    Developed a web-based editor (DepthFlow, Stable Diffusion XL, ControlNets) for customizable visual scenes.",
       "    Reduced generation latency to <20s through backend optimization.",
