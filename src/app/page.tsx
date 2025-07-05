@@ -58,7 +58,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-neutral-920 text-white">
       {/* Mobile Layout */}
       <div className="md:hidden flex flex-col min-h-screen">
         <main className="p-4 max-w-screen-sm mx-auto flex-grow">
