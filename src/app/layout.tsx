@@ -15,6 +15,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Piyush Choudhari",
   description: "AI & Backend Engineer specializing in Python, ML, and full-stack development. Showcasing projects, open-source work, and blog posts.",
+  authors: [{ name: "Piyush Choudhari" }],
+  keywords: ["AI Engineer", "Backend Developer", "Machine Learning", "Python", "Full Stack"],
+  robots: "index, follow",
   icons: {
     icon: "favicon-32x32.png",
     shortcut: "favicon.ico",
@@ -24,10 +27,13 @@ export const metadata: Metadata = {
     description: "Explore my portfolio featuring AI projects and ML tools. Learn from blogs and open-source contributions.",
     type: "website",
     url: "https://piyush-choudhari.vercel.app/",
+    siteName: "Piyush Choudhari Portfolio",
+    locale: "en_US",
     images: [{
       url: "https://piyush-choudhari.vercel.app/profile-pic.png",
       width: 1200,
       height: 630,
+      alt: "Piyush Choudhari Portfolio"
     }],
   },
   twitter: {
