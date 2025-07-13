@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 import Achievements from "@/components/Achievements";
 import { FaArrowUp } from "react-icons/fa";
 import { Pointer } from "@/components/magicui/pointer";
+import { NyanProgress } from "@/components/ui/nyan-progress";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -147,6 +148,9 @@ export default function Home() {
       >
         <FaArrowUp className="h-5 w-5" />
       </button>
+
+      {/* Nyan Cat Progress Bar */}
+      <NyanProgress />
     </div>
   );
 }
